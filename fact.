@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int sayi;
+    int faktoriyel= 1;
+    
+    printf("Bir pozitif sayı giriniz: ");
+    scanf("%d", &sayi);
+    
+    if (sayi <0) {
+        printf("Negatif bir sayı girdiniz... Lütfen pozitif bir sayı giriniz:");
+               }
+    else {
+        for (int i=1; i<= sayi; i++) {
+            faktoriyel *=i;
+            }
+    }
+    printf("%d! = %d\n",sayi,faktoriyel);
+    
+    return 0;
+               
+}
